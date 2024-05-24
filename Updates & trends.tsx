@@ -6,15 +6,15 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import {Updatesntrends as UpdatesntrendsType} from '../types';
+import {Updates & trends as UpdatesntrendsType} from '../types';
 import Text from './AppText';
 
-interface UpdatesntrendsProps {
+interface Updates & trendsProps {
   onPress?: ((event: GestureResponderEvent) => void) | null | undefined;
-  data: UpdatesntrendsType;
+  data: Updates & trendsType;
 }
 
-const Updatesntrends: React.FC<UpdatesntrendsProps> = ({onPress, data}) => {
+const Updates & trends: React.FC<Updates & trendsProps> = ({onPress, data}) => {
   return (
     <Pressable onPress={onPress}>
       <View style={styles.container}>
@@ -55,7 +55,7 @@ const Updatesntrends: React.FC<UpdatesntrendsProps> = ({onPress, data}) => {
   );
 };
 
-export default Updatesntrends;
+export default Updates & trends;
 
 const styles = StyleSheet.create({
   container: {
