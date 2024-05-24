@@ -6,7 +6,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import {Updates & trends as UpdatesntrendsType} from '../types';
+import {Updates & trends as Updates & trendsType} from '../types';
 import Text from './AppText';
 
 interface Updates & trendsProps {
