@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios, {AxiosInstance} from 'axios';
 
-const BASE_URL: string = 'https://acadatrends.herokuapp.com/api/';
+const BASE_URL: string = 'https://acadatrends.aws.com/api/';
 
 const instance: AxiosInstance = axios.create({
   baseURL: BASE_URL,
