@@ -8,22 +8,22 @@ import {MainTabParamList} from './navigationTypes';
 import HomeStackNavigation from './HomeStatckNavigation';
 import HomeIcon from '../svgIcons/HomeIcon';
 import BookIcon from '../svgIcons/BookIcon';
-import NewsIcon from '../svgIcons/NewsIcon';
+import Updates & trendsIcon from '../svgIcons/Updates & trendsIcon';
 import UploadIcon from '../svgIcons/UploadIcon';
 import LinearGradient from 'react-native-linear-gradient';
 import {Dimensions, Pressable, StyleSheet} from 'react-native';
-import NewsStackNavigation from './NewsStackNavigation';
-import EbookStackNavigation from './EbookStackNavigation';
+import Updates & trendsStackNavigation from './Updates & trendsStackNavigation';
+import AcadaproStackNavigation from './AcadaproStackNavigation';
 
 const MainTab = createBottomTabNavigator<MainTabParamList>();
 const visibleTabs = (visible: string) => {
-  if (visible === 'EbookPreview') {
+  if (visible === 'AcadaproBookPreview') {
     return 'none';
   }
-  if (visible === 'News') {
+  if (visible === 'Updates & trends') {
     return 'none';
   }
-  if (visible === 'ReadEbook') {
+  if (visible === 'ReadAcadaproBook') {
     return 'none';
   } else {
     return 'flex';
@@ -93,9 +93,9 @@ const CustomTabBar: React.FC<BottomTabBarProps> = ({
               }}>
               {label === 'Home' ? (
                 <HomeIcon opacity={isFocused ? '#fff' : '#ffffff4D'} />
-              ) : label === 'NewsTab' ? (
-                <NewsIcon opacity={isFocused ? '#fff' : '#ffffff4D'} />
-              ) : label === 'EbooksTab' ? (
+              ) : label === 'Updates & trendsTab' ? (
+                <Updates & trendsIcon opacity={isFocused ? '#fff' : '#ffffff4D'} />
+              ) : label === 'AcadaproBooksTab' ? (
                 <BookIcon opacity={isFocused ? '#fff' : '#ffffff4D'} />
               ) : label === 'Upload' ? (
                 <UploadIcon opacity={isFocused ? '#fff' : '#ffffff4D'} />
@@ -137,10 +137,10 @@ const MainTabNavigator = () => {
             },
           };
         }}
-        name="NewsTab"
-        component={NewsStackNavigation}
+        name="Updates & trendsTab"
+        component={Updates & trendsStackNavigation}
       />
-      <MainTab.Screen name="EbooksTab" component={EbookStackNavigation} />
+      <MainTab.Screen name="AcadaproBooksTab" component={AcadaproBookStackNavigation} />
       <MainTab.Screen name="Upload" component={HomeStackNavigation} />
     </MainTab.Navigator>
   );
