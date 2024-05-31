@@ -8,7 +8,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {StyleSheet, View} from 'react-native';
 import EbooksListScreen from '../screens/EbooksListScreen';
 import EbookPreviewScreen from '../screens/EbookPreviewScreen';
-import ReadEbookScren from '../screens/ReadEbookScren';
+import ReadEbookScreen from '../screens/ReadEbookScreen';
 
 const EbookStack = createNativeStackNavigator<EbookStackParamList>();
 
