@@ -10,7 +10,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import Carousel from 'react-native-snap-carousel';
 import Text from './AppText';
 
-const TrendingNews = () => {
+const Updates & Trends = () => {
   const {width} = useWindowDimensions();
   const scrollX = new Animated.Value(0);
   let position = Animated.divide(scrollX, width);
